@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="/multimedia/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylenav2.css">
+    <title>WORDPHONE</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+          <img src="/multimedia/logo2.png" alt="company" class="logo-img">
+          <p class="logo-nombre">WORDPHONE</p>
+        </a>
+        <nav>
+          <a href="index.html" class="nav-link">INICIO</a>
+          <a href="compras.html" class="nav-link">PRODUCTOS</a>
+          <a href="nosotros.html" class="nav-link">NOSOTROS</a>
+          <a href="login2.html" class="nav-link">INICIAR SESION</a>
+        </nav>
+      </header>
+    <main>
+        <div class="login">
+            <div class="login-datos">
+                 <h1>INICIAR SESION</h1><hr color="#0099ff">
+            <div class="datos-redes">
+                <a href="https://www.google.com" class="redes-soc">
+                    <img src="/multimedia/google.png" alt="google" class="img-social">
+                    <p class="text-social">google</p>
+                </a>
+                <a href="https://www.facebook.com" class="redes-soc">
+                    <img src="/multimedia/facebook1.png" alt="facebook" class="img-social">
+                    <p class="text-social">facebook</p>
+                </a>
+            </div>
+            <h4>o</h4>
+            <form action="">
+            <div class="datos-cuenta">
+                <div class="cuenta-correo">
+                    <label for="correo">correo electronico</label><br>
+                    <input type="email" name="correo" placeholder="ejemplo@gmail.com" id="correo">
+                </div>
+                <div class="cuenta-correo">
+                    <label for="contraseña">contraseña</label><br>
+                    <input type="password" name="contraseña" placeholder="password" id="contraseña">
+                </div>
+                    <p class="regist">si no tienes cuenta <span><a href="registrar.html">registrate</a></span></p>
+                <div class="correo-enviar">
+                    <input type="button" value="iniciar sesion" onclick="verificar()">
+                </div>
+            </div>
+        </form>
+        </div>
+        <div class="login-imagen">
+            <img src="/multimedia/celulares.png" alt="" class="">
+        </div>
+        </div>
+    </main>
+    <script>
+        let control =0
+        let contra = 'jhonerwin'
+
+        function verificar() {
+            let clave = document.getElementById('contraseña').value
+
+            if (clave != contra) { 
+                alert("contraseña incorrecta")
+            }
+            else
+            alert("correcto")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+
+.cel-iphone{
+    background: linear-gradient(black,rgb(9,74,78));
+
+}.cel-iphone1{
+
+    margin: 10px;
+    transition: transform .8s;
+}
+.cel-iphone1:hover{
+    transform: scale(1.07);
+    box-shadow: 0 0 1rem rgb(141, 240, 185);
+}
+#iphone:hover{
+    text-shadow: 0 0 5rem white;
+}
+.titulo-iphone{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-family: corbel;
+    font-size: 30px;
+    color: wheat;
+}
+.cont-cel-iphone{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.img-iphone{
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+.text-iphone{
+    background: linear-gradient(30deg,rgb(27, 158, 114),rgb(8, 27, 23));
+}
+.text-iphone p {
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+}
+.text-iphone input{
+    background:linear-gradient(30deg,rgb(5, 206, 172),black);
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    border-radius: 0 0 10px 10px;
+}
+.imagen-iphone{
+    box-shadow: 0 0 1rem rgb(0, 0, 0);
+    width: 320px;
+    border-radius: 30px;
+}
+.marcas-cel{
+    display: flex;
+    width: 100%;
+    height: 250px;
+    border: solid rgb(0, 0, 0);
+    margin-top: 30px;
+    margin-bottom: 0;
+    box-shadow: 0 0 1rem black;
+}
+.nav-marcas:hover{
+    box-shadow: 0 0 1rem white;
+}
+.marcas-cel:hover >:not(:hover){
+    opacity: 0.4;
+}
+.nav-marcas{
+    flex: 1;
+    background: linear-gradient(50deg,rgb(53, 12, 53),rgb(4, 105, 80),rgb(58, 7, 58));
+    border-radius: 40px;
+    margin-top: 40px;
+    height: 50px;
+    transition: opacity 0.6s ease;
+}
+.nav-marcas a {
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 10px;
+    color: white;
+    filter: drop-shadow(0 0 0.8rem rgb(248, 248, 248));
+}
+.nav-marcas a:hover{
+    color: black;
+    filter: drop-shadow(0 0 1rem,rgb(213, 1, 255));
+}
+select{
+    margin: 0 10px 0;
+}
+@media(max-width:768px){
+    .imagen-iphone{
+        box-shadow: 0 0 1rem rgb(0, 0, 0);
+        width: 140px;
+    }
+    .titulo-iphone{
+        font-size: 20px;
+    }
+    .text-iphone{
+        width: 140px;
+    }
+    .text-iphone p{
+        font-size: 10px;
+    }
+    select{
+        height: 13px;
+        font-size: 10px;
+    }
+    .nav-marcas a {
+        font-size: 23px;
+    }
+
+}

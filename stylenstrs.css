@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+.tit1{
+    border: solid;
+    display: flex;
+    width: 75%;
+    margin-top: 5%;
+    margin-left: 13%;
+    margin-bottom:3% ;
+    align-content: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: gill sans mt;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: grey;
+}
+.tit1:hover{
+    text-shadow: 0 0 3rem white;
+}
+.soli{
+    border: solid;
+    display: flex;
+    width: 75%;
+    margin-top: 5%;
+    margin-left: 13%;
+    margin-bottom: 3%;
+    align-content: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: gill sans mt;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: grey;
+}
+.soli:hover{
+    text-shadow: 0 0 3rem white;
+}
+/*dirrecion*/
+.direccion {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    transition: transform 0.1s;
+    background: linear-gradient(50deg ,rgb(0, 0, 0), rgb(8, 8, 187));
+}
+.direccion:hover{
+    box-shadow: 0 0 1rem blue;
+    transform: scale(0.95);
+}
+.direc-text {
+    width: 50%;
+    color: rgb(241, 241, 241);
+    padding: 20px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+.direc-text h3 {
+    border-bottom: solid black;
+    color: rgb(7, 185, 255);
+}
+.direc-lpz {
+    margin-top: 10%;
+}
+.direc-cocha {
+    margin-top: 10%;
+}
+.direc-stcz {
+    margin-top:  10%;
+}
+.direc-imagen {
+    width: 50%;
+}
+.direc-imagen img {
+    width: 100%;
+    border-radius: 20px;
+}
+/*servicio*/
+.card-servicios {
+    display: flex;
+    gap: 3%;
+    flex: 1;
+    width: 100%;
+}
+.cliente {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    background: linear-gradient(90deg,rgb(24, 98, 128),rgb(197, 197, 197));
+    transition: transform 0.3s;
+}
+.cliente:hover{
+    box-shadow: 0 0 2rem skyblue;
+    transform: scale(1.03);
+}
+.cliente-imagen {
+    width: 100%;
+}
+.cliente-imagen img{
+    width: 100%;
+}
+.cliente-imagen img:hover{
+    filter: drop-shadow(0 0 1rem black);
+}
+.cliente-texto {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    padding-top: 5px;
+    color: rgb(0, 0, 0);
+
+}
+.soporte {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    background: linear-gradient(90deg,rgb(0, 0, 0),rgb(13, 63, 201));
+    transition: transform 0.3s;
+}
+.soporte:hover{
+    box-shadow: 0 0 2rem skyblue;
+    transform: scale(1.03);
+}
+.soporte-imagen {
+    width: 100%;
+}
+.soporte-imagen img{
+    width: 100%;
+}
+.soporte-texto {
+    padding: 30px;
+    height: 100%;
+    padding-top: 5px;
+    color: rgb(255, 255, 255);
+}
+.soporte-imagen img:hover{
+    filter: drop-shadow(0 0 1rem rgb(0, 105, 190));
+}
+.empresa {
+
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    background: linear-gradient(34deg,rgb(84, 42, 124),black);
+    transition: transform 0.3s;
+}
+.empresa:hover{
+    box-shadow: 0 0 2rem skyblue;
+    transform: scale(1.03);
+}
+.empresa-imagen {
+    width: 100%;
+}
+.empresa-imagen img{
+    width: 100%;
+}
+.empresa-texto {
+    height: 100%;
+    padding: 30px;
+    padding-top: 5px;
+    color: rgb(175, 175, 175);
+}
+.empresa-imagen img:hover{
+    filter: drop-shadow(0 0 1rem rgb(255, 255, 255));
+}
+.empresa:hover{
+    box-shadow: 0 0 1rem skyblue;
+}
+@media(max-width:768px){
+    .direc-imagen img{
+        display: none;
+    }
+    .direc-imagen{
+        display: none;
+    }
+    .direc-text{
+        width: 100%;
+    }
+    .direc-text p{
+        padding-top: 10px;
+    }
+    .card-servicios{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .cliente{
+        width: 100%;
+    }
+    .cliente-texto h1{
+        font-size: 25px;
+    }
+    .soporte{
+        width: 100%;
+    }
+    .soporte-texto h1{
+        font-size: 25px;
+    }
+    .empresa{
+        width: 100%;
+    }
+    .empresa-texto h1{
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,69 @@
+.cel-samsung {
+    background-color: rgb(9, 74, 78);
+}
+
+.cont-cel-samsung {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cel-samsung1 {
+    margin: 10px;
+    transition: transform .8s;
+}
+.cel-samsung1:hover{
+    transform: scale(1.07);
+    box-shadow: 0 0 1rem white;
+}
+.titulo-samsung{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: corbel;
+    color: white;
+}
+#samsung:hover{
+    text-shadow: 0 0 5rem white;
+}
+.imagen-samsung {
+    width: 320px;
+    border-radius: 30px;
+}
+.img-samg {
+    width: 100%;
+    height: auto;
+    border-radius: 29px;
+}
+.text-samsung {
+    background: linear-gradient(20deg,black,rgb(2, 252, 218));
+    color: white;
+}
+.text-samsung p{
+    font-family: sans-serif;
+}
+.text-samsung input{
+    background: linear-gradient(20deg,black,cyan);
+    text-transform: uppercase;
+    color: white;
+    border-radius: 0 0 10px 10px;
+}
+.imagen-samsung{
+    width: 320px;
+    border-radius: 30px;
+    box-shadow: 0 0 1rem rgb(4, 139, 139);
+}
+@media(max-width:768px){
+    .imagen-samsung{
+        box-shadow: 0 0 1rem white;
+        width: 140px;
+    }
+    .titulo-samsung{
+        font-size: 20px;
+    }
+    .text-samsung{
+        width: 140px;
+    }
+    .text-samsung p{
+        font-size: 10px;
+    }
+}
